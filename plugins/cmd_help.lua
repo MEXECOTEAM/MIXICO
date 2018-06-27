@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<         @VI_P2  \  @MEXICO          >>
 ]]
 function run(msg, matches)
 if msg.to.type == 'channel' and redis:get(boss..'group:add'..msg.to.id) then
@@ -191,7 +191,7 @@ return sendMsg(msg.to.id,1,text,'md')
 end end 
 if matches[1] == "سورس" or matches[1]=="السورس" then
 return [[
-    🛠 ┇ تنصـيب سـورس آلزعيم آلجديد 🔎
+    🛠 ┇ تنصـيب سـورس مكسيكو آلجديد 🔎
 
  ⇓⇓⇓ 
 
