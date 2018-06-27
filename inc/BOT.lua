@@ -211,14 +211,14 @@ print('\27[31mError loading plugins '..v..'\27[39m')
 print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
 print('\27[31m'..ERROR_info..'\27[39m')
 end end
-print('\n\27[0;32mPlugins is : '..#list_plug..' Are Active.\n\n\27[0;31mThe SOURCE RUN IS MIXICO'..redis:get(boss..':VERSION')..'...\n\27[m')
+print('\n\27[0;32mPlugins is : '..#list_plug..' Are Active.\n\n\27[0;31mThe SOURCE RUN IS MIXICO'..redis:get(MIXICO..':VERSION')..'...\n\27[m')
 end
 load_plugins()
 function msg_check(msg)
 if tonumber(msg.date_ or 0) < (tonumber(os.time()) - 30) then
 print('\27[36m¦¦¦¦   (THIS_IS_OLD_MSG)   ¦¦¦¦\27[39m')
 return false end 
-if not (tostring(msg.chat_id_):match('^-100') or tostring(msg.chat_id_):match('-')) and redis:get(boss..':mute_pv:'..msg.sender_user_id_) then
+if not (tostring(msg.chat_id_):match('^-100') or tostring(msg.chat_id_):match('-')) and redis:get(MIXICO..':mute_pv:'..msg.sender_user_id_) then
 print('is_MUTE_BY_FLOOD')
 return false end
 if is_silent_user(msg.sender_user_id_,msg.chat_id_) then 
