@@ -1,6 +1,6 @@
 --[[
 << تم برمجه وكتابه السورس من قبل مطورين >>
-<<         @BLCON  \  @TH3BOSS          >>
+<<         @VI_P2  \  @MEXECO          >>
 ]]
 local function xboss(msg, matches)
 if msg.to.type ~= 'pv' then
