@@ -10,7 +10,7 @@ if r == BOT_NAME and r2 == 'غادر' and is_sudo(msg) then
 sendMsg(msg.to.id,msg.id_,'اوك باي 😢💔💯','html')
 botrem(msg)
 end   
-if (r == "ضع اسم للبوت" or r== 'ضع اسم للبوت ©') and is_sudo(msg) then
+if (r == "ضع اسم بوتك" or r== 'ضع اسم بوتك ©') and is_sudo(msg) then
 if not we_sudo(msg) then return "☔️هذا الاوامر للمطور الاساسي فقط 🌑" end
 redis:setex(boss..'namebot:witting'..msg.from.id,300,true)
 return"📭¦ حسننا عزيزي  ✋🏿\n🗯¦ الان ارسل الاسم  للبوت 🍃"
@@ -66,7 +66,7 @@ if (r=="تيست" or r=="test") and is_sudo(msg) then return "💯 البوت ش
 if (r== "ايدي" or r=="ايدي 🆔") and msg.to.type == "pv" then return  "\n"..msg.from.id.."\n"  end
 if r== "قناة السورس 📡" and msg.to.type == "pv" then
 local inline = {{{text="قنآهہ‏‏ آلسـورس : مكسيكو 🍃",url="t.me/MEXIC_TV"}}}
-return send_inline_key(msg.from.id,'  [قناة السورس : مكسيكو](t.me/MEXIC_TV)',nil,inline)
+t.me/MEXIC_TV)',nil,inline)
 end
 if (r== "الاحصائيات 📈" or r=="الاحصائيات") and is_sudo(msg) then
 local group = redis:smembers(boss..'group:ids')
