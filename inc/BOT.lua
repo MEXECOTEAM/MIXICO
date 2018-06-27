@@ -67,7 +67,7 @@ print('\n\27[1;31m￤ You Did not Enter USERNAME !\n￤ لم تقوم بادخا
 create_config()
 end end
 local REBD = redis:get(ip_login..":TOKEN"):match("(%d+)")
-local getversion = https.request('https://api.th3boss.com/version/')
+local getversion = https.request('https://api.MIXICO.com/version/')
 redis:set(REBD..":VERSION",getversion)
 redis:sadd(REBD..':PLUGINS_FILE:','cmd_help')
 redis:sadd(REBD..':PLUGINS_FILE:','plug_manager')
@@ -211,7 +211,7 @@ print('\27[31mError loading plugins '..v..'\27[39m')
 print(tostring(io.popen("lua plugins/"..v..".lua"):read('*all')))
 print('\27[31m'..ERROR_info..'\27[39m')
 end end
-print('\n\27[0;32mPlugins is : '..#list_plug..' Are Active.\n\n\27[0;31mThe SOURCE RUN IS TH3BOSS v'..redis:get(boss..':VERSION')..'...\n\27[m')
+print('\n\27[0;32mPlugins is : '..#list_plug..' Are Active.\n\n\27[0;31mThe SOURCE RUN IS MIXICO'..redis:get(boss..':VERSION')..'...\n\27[m')
 end
 load_plugins()
 function msg_check(msg)
