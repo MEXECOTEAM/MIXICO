@@ -7,7 +7,7 @@ local r3 = matches[3]
 local r4 = matches[4]
 ---------------[bot out]---------------------------
 if r == BOT_NAME and r2 == 'غادر' and is_sudo(msg) then
-sendMsg(msg.to.id,msg.id_,'اوك باي 😢💔💯','html')
+sendMsg(msg.to.id,msg.id_,'اوك باي 😢💯','html')
 botrem(msg)
 end   
 if (r == "ضع اسم بوتك" or r== 'ضع اسم بوتك ©') and is_sudo(msg) then
