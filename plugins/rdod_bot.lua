@@ -65,7 +65,7 @@ end
 if (r=="تيست" or r=="test") and is_sudo(msg) then return "💯 البوت شـغــال 🚀" end
 if (r== "ايدي" or r=="ايدي 🆔") and msg.to.type == "pv" then return  "\n"..msg.from.id.."\n"  end
 if r== "قناة السورس 📡" and msg.to.type == "pv" then
-local inline = {{{text="قنآهہ‏‏ آلسـورس : الـزعـيـم 🍃",url="t.me/lldev1ll"}}}
+local inline = {{{text="قنآهہ‏‏ آلسـورس : الـزعـيـم 🍃",url="t.me/MIXICO"}}}
 return send_inline_key(msg.from.id,'  [قناة السورس : الـزعـيـم](t.me/lldev1ll)',nil,inline)
 end
 if (r== "الاحصائيات 📈" or r=="الاحصائيات") and is_sudo(msg) then
